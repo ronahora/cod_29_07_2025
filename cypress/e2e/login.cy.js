@@ -15,7 +15,7 @@ describe('Teste de Login no E-commerce', () => {
     it('Deve exibir uma mensagem de erro ao inserir credenciais inválidas', () => {
 
       cy.get('[data-test="username"]').type('teste');
-      cy.get('[data-test="password"]').type('teste');
+      cy.get('[data-test="password"]').type('teAAste');
       cy.get('[data-test="login-button"]').click();
 
       // Valida se a mensagem de erro é exibida
